@@ -1,64 +1,73 @@
 
 public class Equipamento {
 
+     // protected, private, public são as declarações, alem da default
      // atrbuidos do equipamento 
-     private String NomeEquipamento;
-     private float CustoEquipamento;
-     private String CodigoIdentificação;
-     private float CustoReparo;
-     private String TipoEquipamento;
+     private String nomeequipamento;
+     private float custoequipamento;
+     private int codigoidentificação;
+     private float custoreparo;
+     private String tipoequipamento;
 
-     public Equipamento(String NomeEquipamento, float CustoEquipamento, String CodigoIdentificação, float CustoReparo, String TipoEquipamento ){
-          this.NomeEquipamento = NomeEquipamento;
-          this.CustoEquipamento = CustoEquipamento;
-          this.CodigoIdentificação = CodigoIdentificação;
-          this.CustoReparo = CustoReparo;
-          this.TipoEquipamento = TipoEquipamento;
+     // Construtor Sobrecarregado
+     public Equipamento(String nomeequipamento, float custoequipamento, int codigoidentificação, float custoreparo, String tipoequipamento ){
+          this.nomeequipamento = nomeequipamento;
+          this.custoequipamento = custoequipamento;
+          this.codigoidentificação = codigoidentificação;
+          this.custoreparo = custoreparo;
+          this.tipoequipamento = tipoequipamento;
           
      }
      
+     // Construtor Vazio
      public Equipamento(){
 
      }
 
-     public void SetNomeEquipamento( String NovoEquipamento ){
-          this.NomeEquipamento = NovoEquipamento;
+     // Construtor Padrão
+     public Equipamento(String nomeequipamento){
+          this.nomeequipamento = nomeequipamento;
      }
 
-     public String GetNomeEquipamento(){
-          return this.NomeEquipamento;
+     // Getters e Setters
+     public void setNomeEquipamento( String nomeequipamento ){
+          this.nomeequipamento = nomeequipamento;
      }
 
-     public void SetCustoEquipamento( float NovoCustoEquipamento ){
-          this.CustoEquipamento = NovoCustoEquipamento;
+     public String getNomeEquipamento(){
+          return this.nomeequipamento;
      }
 
-     public float GetCustoEquipamento(){
-          return this.CustoEquipamento;
+     public void setCustoEquipamento( float custoequipamento ){
+          this.custoequipamento = custoequipamento;
      }
 
-     public void SetCodigoIdentificação( String NovoCodigoIdentificação ){
-          this.CodigoIdentificação = NovoCodigoIdentificação;
+     public float getCustoEquipamento(){
+          return this.custoequipamento;
+     }
+
+     public void setCodigoIdentificação( int codigoidentificação ){
+          this.codigoidentificação = codigoidentificação;
      } 
 
-     public String GetCodigoIdentificação(){
-          return this.CodigoIdentificação;
+     public int getCodigoIdentificação(){
+          return this.codigoidentificação;
      }
 
-     public float SetCustoReparo( float NovoCustoReparo){
-          this.CustoReparo = NovoCustoReparo;
+     public float setCustoReparo( float custoreparo){
+          this.custoreparo = custoreparo;
      }
 
-     public float GetCustoReparo(){
-          return this.CustoReparo;
+     public float getCustoReparo(){
+          return this.custoreparo;
      }
 
-     public void SetTipoEquipamento( String NovoTipoEquipamento){
-          this.TipoEquipamento = NovoTipoEquipamento;
+     public void setTipoEquipamento( String tipoequipamento){
+          this.tipoequipamento = tipoequipamento;
      }
 
-     public String GetTipoEquipamento(){
-          return this.TipoEquipamento;
+     public String getTipoEquipamento(){
+          return this.tipoequipamento;
      }
      
 }

@@ -1,69 +1,83 @@
 
 
-public class Alugel {
+public class Aluguel {
 
+     // protected, private, public são as declarações, alem da default
      // atribuido de alugel do equipamento
-     private double ValorAlugel;
-     private String FormaPagamento;
-     private String DataInicio; // a data em que foi alugada o equipamento
-     private String DataFim; // data de devolução do equipamento
-     private float ValorDiaria;
-     private float ValorTotal;
-     private String Status; // se o equipamento já está alugado ou disponivel
+     private float valorhora;
+     private String formapagamento;
+     private String datainicio; // a data em que foi alugada o equipamento
+     private String datafim; // data de devolução do equipamento
+     private double valordiaria;
+     private String status; // se o equipamento já está alugado ou disponivel
 
-     public void SetValorAlugel( double NovoValorAlugel ){
-          this.ValorAlugel = NovoValorAlugel;
+     // Construtor sobrecarregado
+     public Aluguel( float valorhora, String formapagamento, String datainicio, String datafim, double valordiaria, String status ){
+          this.valorhora = valorhora;
+          this.formapagamento = formapagamento;
+          this.datainicio = datainicio;
+          this.DataFim = datafim;
+          this.valordiaria = valordiaria;
+          this.status = status;
      }
      
-     public double GetValorAlugel(){
-          return this.ValorAlugel;
+     // Construtor Vazio
+     public Aluguel(){
+     
      }
 
-     public void SetFormaPagamento( String NovaFormaPagamento ){
-          this.ValorFormaPagamento = NovaFormaPagamento;
-     }
-     
-     public String GetFormaPagamento(){
-          return this.FormaPagamento;
+     //Construtor Padrão
+     public Aluguel( double valorhora ){
+          this.valorhora = valorhora;
      }
 
-     public void SetDataInicio( String NovaDataInicio ){
-          this.DataInicio = NovaDataInicio;
+
+     // Getters e Setters
+     public void setValorHora( double valorhora ){
+          this.valorhora = valorhora;
      }
      
-     public String GetDataInicio(){
-          return this.DataInicio;
+     public double getValorHora(){
+          return this.valoravalorhoraluguel;
      }
 
-     public void SetDataFim( String NovoDataFim ){
-          this.ValorDataFim = NovoDataFim;
+     public void setFormaPagamento( String formapagamento ){
+          this.formapagamento = formapagamento;
      }
      
-     public String GetDataFim(){
-          return this.DataFim;
+     public String getFormaPagamento(){
+          return this.formapagamento;
      }
 
-     public void SetValorDiaria( float NovoValorDiaria ){
-          this.ValorDiaria = NovoValorDiaria;
+     public void setDataInicio( String datainicio ){
+          this.datainicio = datainicio;
      }
      
-     public float GetValorDiaria(){
-          return this.ValorDiaria;
+     public String getDataInicio(){
+          return this.datainicio;
      }
 
-     public void SetValorTotal( float NovoValorTotal ){
-          this.ValorTotal = NovoValorTotal;
+     public void setDataFim( String datafim ){
+          this.datafim = datafim;
      }
      
-     public float GetValorTotal(){
-          return this.ValorTotal;
+     public String getDataFim(){
+          return this.datafim;
      }
 
-     public void SetStatus( String NovoStatus ){
-          this.ValorDiaria = NovoStatus;
+     public void SetValorDiaria( double valordiaria ){
+          this.valordiaria = valordiaria;
      }
      
-     public String GetStatus(){
-          return this.Status;
+     public double GetValorDiaria(){
+          return this.valordiaria;
+     }
+
+     public void setStatus( String status ){
+          this.status = status;
+     }
+     
+     public String getStatus(){
+          return this.status;
      }
 }
