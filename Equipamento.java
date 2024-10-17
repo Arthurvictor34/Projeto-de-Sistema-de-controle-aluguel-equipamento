@@ -54,7 +54,7 @@ public class Equipamento {
           return this.codigoidentificação;
      }
 
-     public float setCustoReparo( float custoreparo){
+     public void setCustoReparo( float custoreparo ){
           this.custoreparo = custoreparo;
      }
 

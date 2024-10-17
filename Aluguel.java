@@ -16,7 +16,7 @@ public class Aluguel {
           this.valorhora = valorhora;
           this.formapagamento = formapagamento;
           this.datainicio = datainicio;
-          this.DataFim = datafim;
+          this.datafim = datafim;
           this.valordiaria = valordiaria;
           this.status = status;
      }
@@ -27,18 +27,18 @@ public class Aluguel {
      }
 
      //Construtor Padrão
-     public Aluguel( double valorhora ){
+     public Aluguel( float valorhora ){
           this.valorhora = valorhora;
      }
 
 
      // Getters e Setters
-     public void setValorHora( double valorhora ){
+     public void setValorHora( float valorhora ){
           this.valorhora = valorhora;
      }
      
      public double getValorHora(){
-          return this.valoravalorhoraluguel;
+          return this.valorhora;
      }
 
      public void setFormaPagamento( String formapagamento ){

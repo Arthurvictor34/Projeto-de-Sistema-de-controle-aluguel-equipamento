@@ -35,7 +35,7 @@ public class Cliente {
      }
 
      public String getNome(){
-          return this.Nome;
+          return this.nome;
      }
 
      public void setSobrenome( String sobrenome){
@@ -59,7 +59,7 @@ public class Cliente {
      }
 
      public String getCPF(){
-          return this.CPF;
+          return this.cpf;
      }
 
      public void setIdade( int idade ){
