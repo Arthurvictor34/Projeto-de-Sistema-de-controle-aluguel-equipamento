@@ -4,11 +4,11 @@ public class Cliente {
 
      // protected, private, public são as declarações, alem da default
      // atribuidos de identificação 
-     private String nome;
-     private String sobrenome;
-     private String celular;
-     private String cpf;
-     private int idade;
+     public String nome;
+     public String sobrenome;
+     protected String celular;
+     protected String cpf;
+     public int idade;
 
      // Construtor Sobrecarregado
      public Cliente( String nome, String sobrenome, String celular, String cpf, int idade){
