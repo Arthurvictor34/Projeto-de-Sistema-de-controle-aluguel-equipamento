@@ -4,9 +4,9 @@ public class Equipamento {
      // protected, private, public são as declarações, alem da default
      // atrbuidos do equipamento 
      private String nomeequipamento;
-     private float custoequipamento;
+     private double custoequipamento;
      private int codigoidentificação;
-     private float custoreparo;
+     private double custoreparo;
      private String tipoequipamento;
 
      // Construtor Sobrecarregado
@@ -38,11 +38,11 @@ public class Equipamento {
           return this.nomeequipamento;
      }
 
-     public void setCustoEquipamento( float custoequipamento ){
+     public void setCustoEquipamento( double custoequipamento ){
           this.custoequipamento = custoequipamento;
      }
 
-     public float getCustoEquipamento(){
+     public double getCustoEquipamento(){
           return this.custoequipamento;
      }
 
@@ -54,11 +54,11 @@ public class Equipamento {
           return this.codigoidentificação;
      }
 
-     public void setCustoReparo( float custoreparo ){
+     public void setCustoReparo( double custoreparo ){
           this.custoreparo = custoreparo;
      }
 
-     public float getCustoReparo(){
+     public double getCustoReparo(){
           return this.custoreparo;
      }
 

@@ -3,9 +3,9 @@ public class MainProjeto{
     public static void main( String[] args ){
         Equipamento eq1 = new Equipamento();
         eq1.setNomeEquipamento ( "Picareta");
-        eq1.setCustoEquipamento ( 110.87f);
+        eq1.setCustoEquipamento ( 110.87);
         eq1.setCodigoIdentificação (  54774021); // Codigo gerado aleatoriamente
-        eq1.setCustoReparo ( 20.76f);
+        eq1.setCustoReparo ( 20.76);
         eq1.setTipoEquipamento ( "Uso manual");
 
         Aluguel al1 = new Aluguel();
@@ -13,7 +13,7 @@ public class MainProjeto{
         al1.setFormaPagamento( "Pix"); // Pix, cartão de credito e debito ou dinheiro.
         al1.setDataInicio ( "17/10/2024");
         al1.setDataFim( "20/10/2024");
-        al1.SetValorDiaria ( 200.76f);
+        al1.SetValorDiaria ( 200.76);
         al1.setStatus( "Alugada"); // Se a ferramente está alugada ou livre.
 
         Cliente cl1 = new Cliente();
@@ -22,6 +22,11 @@ public class MainProjeto{
         cl1.setCelular(  "81 81234 8124");
         cl1.setCPF( "983-214-211-19");
         cl1.setIdade( 21);
+
+        System.out.println("Nome da ferramenta é: " + eq1.getNomeEquipamento());
+        System.out.println("O Valor da diaria é: " + al1.GetValorDiaria());
+        System.out.println(" O nome do cliente é: " + cl1.getNome() + " " +cl1.getSobrenome());
+
     }
 
 }

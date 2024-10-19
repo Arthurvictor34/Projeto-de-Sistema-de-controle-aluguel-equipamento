@@ -4,7 +4,7 @@ public class Aluguel {
 
      // protected, private, public são as declarações, alem da default
      // atribuido de alugel do equipamento
-     private float valorhora;
+     private double valorhora;
      private String formapagamento;
      private String datainicio; // a data em que foi alugada o equipamento
      private String datafim; // data de devolução do equipamento
@@ -27,13 +27,13 @@ public class Aluguel {
      }
 
      //Construtor Padrão
-     public Aluguel( float valorhora ){
+     public Aluguel( double valorhora ){
           this.valorhora = valorhora;
      }
 
 
      // Getters e Setters
-     public void setValorHora( float valorhora ){
+     public void setValorHora( double valorhora ){
           this.valorhora = valorhora;
      }
      
