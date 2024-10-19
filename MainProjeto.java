@@ -23,9 +23,10 @@ public class MainProjeto{
         cl1.setCPF( "983-214-211-19");
         cl1.setIdade( 21);
 
-        System.out.println("Nome da ferramenta é: " + eq1.getNomeEquipamento());
-        System.out.println("O Valor da diaria é: " + al1.GetValorDiaria());
-        System.out.println(" O nome do cliente é: " + cl1.getNome() + " " +cl1.getSobrenome());
+        // Exemplo de impimir a informação na tela
+        System.out.print(" O nome do cliente é: " + cl1.getNome());
+        System.out.print(" " + cl1.getSobrenome());
+
 
     }
 
