@@ -10,7 +10,7 @@ public class Equipamento {
      private String tipoequipamento;
 
      // Construtor Sobrecarregado
-     public Equipamento(String nomeequipamento, float custoequipamento, int codigoidentificação, float custoreparo, String tipoequipamento ){
+     public Equipamento(String nomeequipamento, double custoequipamento, int codigoidentificação, double custoreparo, String tipoequipamento ){
           this.nomeequipamento = nomeequipamento;
           this.custoequipamento = custoequipamento;
           this.codigoidentificação = codigoidentificação;

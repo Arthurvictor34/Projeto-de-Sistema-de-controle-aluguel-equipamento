@@ -12,7 +12,7 @@ public class Aluguel {
      private String status; // se o equipamento já está alugado ou disponivel
 
      // Construtor sobrecarregado
-     public Aluguel( float valorhora, String formapagamento, String datainicio, String datafim, double valordiaria, String status ){
+     public Aluguel( double valorhora, String formapagamento, String datainicio, String datafim, double valordiaria, String status ){
           this.valorhora = valorhora;
           this.formapagamento = formapagamento;
           this.datainicio = datainicio;
