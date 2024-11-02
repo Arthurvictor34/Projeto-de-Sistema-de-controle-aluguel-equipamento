@@ -1,6 +1,11 @@
 public class MainProjeto{
 
+    public void InserirNome(Cliente cl1){
+        System.out.print(" Seu nome é: " + cl1.getNome() + " " + cl1.getSobrenome());
+    }
     public static void main( String[] args ){
+        MainProjeto mainpro = new MainProjeto();
+
         Equipamento eq1 = new Equipamento();
         eq1.setNomeEquipamento ( "Picareta");
         eq1.setCustoEquipamento ( 110.87);
@@ -23,10 +28,7 @@ public class MainProjeto{
         cl1.setCPF( "983-214-211-19");
         cl1.setIdade( 21);
 
-        // Exemplo de impimir a informação na tela
-        System.out.print(" O nome do cliente é: " + cl1.getNome());
-        System.out.print(" " + cl1.getSobrenome());
-
+        mainpro.InserirNome(cl1);
 
     }
 
