@@ -21,15 +21,15 @@ public class MainProjeto{
         al1.SetValorDiaria ( 200.76);
         al1.setStatus( "Alugada"); // Se a ferramente está alugada ou livre.
 
-        Cliente cl1 = new Cliente();
+        Cliente cl1 = new Cliente(null, null, null, null, 0, 0);
         cl1.setNome( "Roberto");
         cl1.setSobrenome( "Carlos");
         cl1.setCelular(  "81 81234 8124");
         cl1.setCPF( "983-214-211-19");
         cl1.setIdade( 21);
+        cl1.setSalario(1456.54);;
 
         mainpro.InserirNome(cl1);
 
     }
-
 }
